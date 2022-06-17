@@ -1,0 +1,36 @@
+<!-- //Write an arrow function that accepts an array of numbers as input and returns the
+average of those numbers. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVERAGE OF NUMBERS</title>
+</head>
+<body>
+    <script>
+        var a=[];
+        var sum=0;
+        var size=(Number(prompt("Enter the array size")));
+        for(var i=0;i<size;i++)
+        {
+            a[i]=(Number(prompt("Enter the element "+(i+1))));
+        }
+
+        const sumEvens = (arr) => {
+            let sum=0;
+            for(let number of arr)
+            {
+                if(number%2 === 0)
+                {
+                    sum += number;
+                }
+            }
+            return sum;}
+            
+            document.write(sumEvens(a));
+        </script>
+</body>
+</html>
